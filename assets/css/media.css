@@ -1,0 +1,85 @@
+@media (max-width: 1200px) {
+    .HomeContainer{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 90px 30px 0px 80px;
+        width: 100%;
+      }
+ }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    .grid-container {
+        /* display: grid; */
+        grid-template-columns: auto auto auto auto auto auto ;
+        padding: 5px;
+       
+       
+      }
+      .grid-container1{
+       display: block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+        height: 550px;
+      }
+      .HomeContainer{
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .grid-container1 img{
+        align-items: center;
+      }
+ }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    .grid-container {
+         /* display: grid;   */
+          grid-template-columns: auto auto auto auto  ; 
+       
+        gap: 10px;
+       justify-content: center;
+        padding: 10px;
+      }
+      .grid-container1{
+        display: block;
+       
+       height: 550px;
+       text-align: center;
+      }
+      .HomeContainer{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 90px 30px 0px 80px;
+        width: 100%;
+      }
+      .inputdiv1{
+        display: block;
+        height: 150px;
+      }
+      
+    }
+ 
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .grid-container1{
+        display: block;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+         height: 550px;
+       }
+       .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+        gap: 10px;
+       
+        padding: 10px;
+      }
+ }
