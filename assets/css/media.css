@@ -8,6 +8,7 @@
       }
  }
  
+ 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
     .grid-container {
@@ -33,6 +34,12 @@
       .grid-container1 img{
         align-items: center;
       }
+     .slider-text-div{
+      align-items: center;
+      display: flex;
+     } 
+    
+    
  }
  
 /* Landscape phone to portrait tablet */
@@ -62,8 +69,11 @@
         display: block;
         height: 150px;
       }
-      
-    }
+      .vedio-para-img-div h1,p,button{
+         text-align: center;
+      }
+     
+  }
  
  
 /* Landscape phones and down */

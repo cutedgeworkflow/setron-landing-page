@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Owl Carousel</title>
+    <!-- Include Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+        .bg-slider-image2 {
+            background-image: url('./assets/image/Group\ 1261153902.png');
+            width: 25%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <h1>50+ Smart Fans
+                    For Your Home</h1>
+                <p>
+                    Our designer already made a lot of beautiful prototipe of rooms that inspire you
+                </p>
+                <button class="bg-dark-blue">Enquire Now</button>
+            </div>
+            <div class="col-lg-8">
+
+                <div class="owl-carousel main-slider d-flex ">
+                    <div class="item">
+                        <h4>Parent Carousel Item 1</h4>
+                        <div class="owl-carousel nested-carousel">
+                            <div class="item">
+                                <img src="./assets/image/Asset 1@4x 12.png" class="bg-slider-image2" />
+                            </div>
+                            <div class="item">
+                                <img src="./assets/image/crwonsatingold-removebg-preview.png"
+                                    class="bg-slider-image2 w-100" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="item"><img src="./assets/image/Group 1261153896.png" class="w-50" /></div>
+                    <div class="item"><img src="./assets/image/Frame 115.png" class="w-50" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize Owl Carousel for the parent carousel
+            $('.main-slider').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 2
+            });
+
+            // Initialize Owl Carousel for each nested carousel
+            $('.nested-carousel').owlCarousel({
+                loop: true,
+                autoplay:true,
+                margin: 10,
+                nav: true,
+                items: 1
+            });
+        });
+    </script>
+
+</body>
+
+</html>
