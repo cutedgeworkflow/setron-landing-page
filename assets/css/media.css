@@ -10,14 +10,15 @@
  
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 991px) { 
     .grid-container {
         /* display: grid; */
         grid-template-columns: auto auto auto auto auto auto ;
         padding: 5px;
-       
-       
-      }
+       }
+       .slider-text-div{
+        text-align: center;
+       }
       .grid-container1{
        display: block;
       justify-content: center;
@@ -38,12 +39,45 @@
       align-items: center;
       display: flex;
      } 
+     .testmono .Image-1{
+      margin-left: 2px;
+      width: 98%;
+     }
+     .main-div1{
+      padding: 1px;
+    }
+    .footer-section.links ul{
+      display: none;
+    }
+    .main-row-div{
     
-    
+      margin-left: 20px;
+    }
+    .img-6{
+   
+      height: 100%;
+    }
+    .num-div-main{
+      justify-content: center;
+      display: block;
+      padding-left: 20px;
+    }
+    .img-div{
+      display: flex;
+      justify-content: center;
+      }
+    form{
+      flex-direction: column;
+    }
+    form .form-control{
+      width: 100%;
+    }
+
  }
  
+ 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
+@media (max-width: 768px) { 
     .grid-container {
          /* display: grid;   */
           grid-template-columns: auto auto auto auto  ; 
@@ -72,12 +106,51 @@
       .vedio-para-img-div h1,p,button{
          text-align: center;
       }
-     
+      .container-fluid{
+       padding: 0;
+        
+       }
+       .nav-pills .nav-link{
+        padding: 10px;
+       }
+       .main-div1{
+        padding: 1px;
+      }
+      .footer-section.links ul{
+        display: none;
+      }
+     .main-row-div{
+        
+        margin-left: 20px;
+      }
+      .banner-inside-cont{
+        margin: 20px 0;
+      }
+      .img-6{
+   
+        height: 100%;
+      }
+      .num-div-main{
+        justify-content: center;
+        display: block;
+        padding-left: 20px;
+      }
+      .img-div{
+        display: flex;
+        justify-content: center;
+        }
+        form{
+          flex-direction: column;
+        }
+        form .form-control{
+          width: 100%;
+        }
+  
   }
  
  
 /* Landscape phones and down */
-@media (max-width: 480px) { 
+@media (max-width: 500px) { 
     .grid-container1{
         display: block;
        justify-content: center;
@@ -92,4 +165,65 @@
        
         padding: 10px;
       }
+      .container-fluid{
+       padding: 0 15px;
+         
+        }
+        .main-div1{
+          padding: 1px;
+        }
+        .footer-section.links ul{
+          display: none;
+        }
+        .main-row-div{
+         
+          margin-left: 20px;
+        }
+        .img-6{
+   
+          height: 100%;
+        }
+        .num-div-main{
+          justify-content: center;
+          display: block;
+          padding: 20px;
+        }
+        .img-div{
+          display: flex;
+          justify-content: center;
+          }
+          form{
+            flex-direction: column;
+          }
+          form .form-control{
+            width: 100%;
+          }
+          
  }
+ @media only screen and (max-width: 360px) {
+  .slideshow-container  .prev, .next,.text {font-size: 11px}
+  
+  .main-row-div{
+  
+    margin-left: 20px;
+  }.img-6{
+   
+    height: 100%;
+  }
+  .num-div-main{
+    justify-content: center;
+    display: block;
+    padding-left: 20px;
+  }
+  .img-div{
+  display: flex;
+  justify-content: center;
+  }
+  form{
+    flex-direction: column;
+  }
+  form .form-control{
+    width: 100%;
+  }
+
+}

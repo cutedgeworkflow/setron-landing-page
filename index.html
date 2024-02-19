@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link href="./assets/css/style.css" rel="stylesheet" />
   <link href="./assets/css/font.css" rel="stylesheet" />
+  <link href="./assets/css/media.css" rel="stylesheet" />
 </head>
 <style>
   /* Change the active dot color */
@@ -45,29 +46,29 @@
 
 <body>
   <!-- navbar-start -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-ligh text-center">
+  <nav class="navbar navbar-expand-lg navbar-light  text-center">
     <div class="container">
-      <a class="navbar-brand" href="#"> <img src="./assets/image/Group 3.png" class="header-logo" /></a>
+      <a class="navbar-brand" href="#"><img src="./assets/image/Group 3.png" class="header-logo" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active ">
-            <a class="nav-link" href="#">Home Screen </a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Hero Section</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Products</a>
+            <a class="nav-link" href="product">Our Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact US</a>
+            <a class="nav-link" href="#form">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Testimonial</a>
@@ -78,7 +79,7 @@
   </nav> <!-- navbar-end -->
   <!-- section-slider start -->
   <section class="slider container-fluid">
-    <div class="owl-carousel">
+    <div class="owl-carousel banner-slider">
       <div class="main-div1">
         <div class="row">
           <div class="col-lg-5 slider-text-div col-12">
@@ -88,27 +89,31 @@
                 <p class="slider-heading-p">
                   Exclusive technologies ensure full-speed
                 </p>
-              </div>
-              <div class="d-flex ">
-                <div>
-                  <h1 class="slider-number">10,000</h1>
-                  <p class="slider-number-ph">mAh large capacity</p>
+              </div> 
+              <div class="num-div-main ">
+                <div class="num-div">   
+                  <h2 class="slider-number">10,000</h2>
+                  <h5>mAh large capacity</h5>
                   <p class="slider-number-p">
                     Amet minim mollit non deserunt ullamco est
                   </p>
                 </div>
-                <div>
-                  <h1 class="slider-number">24</h1>
-                  <p class="slider-number-ph">hours work up to</p>
+                <div class="num-div">
+                  <h2 class="slider-number">24</h2>
+                  <h5>hours work up to</h5>
                   <p class="slider-number-p">
                     Velit officia consequat duis enim guclm
                   </p>
                 </div>
+
               </div>
+              <button class="button-slider1">DOWNLOAD BROCHURE</button>
+
             </div>
+
           </div>
           <div class="col-lg-7 col-12 img-div">
-            <img src="./assets/image/pngwing 9.png" class="w-100  img-6" />
+            <img src="./assets/image/banner-1.png" class="w-100  img-6" />
           </div>
         </div>
       </div>
@@ -122,22 +127,24 @@
                   We supply to all leading industries, across India
                 </p>
               </div>
-              <div class="d-flex ">
-                <div>
-                  <h1 class="slider-number">12,000</h1>
-                  <p class="slider-number-ph">Sweep (mm)</p>
+              <div class="d-flex num-div-main justify-content-between">
+                <div class="num-div">
+                  <h2 class="slider-number">12,000</h2>
+                  <h5>Sweep (mm)</h5>
                   <p class="slider-number-p">
                     Rated Speed (RPM) : 380 Minimum Air Delivery(CMM) : 210
                   </p>
                 </div>
-                <div>
-                  <h1 class="slider-number">75</h1>
-                  <p class="slider-number-ph">Rated Power (Watts)</p>
+                <div class="num-div">
+                  <h2 class="slider-number">75</h2>
+                  <h5>Rated Power (Watts)</h5>
                   <p class="slider-number-p">
                     Velit officia consequat duis enim guclm
                   </p>
                 </div>
               </div>
+              <button class="button-slider1">DOWNLOAD BROCHURE</button>
+
             </div>
           </div>
           <div class="col-lg-7">
@@ -155,22 +162,24 @@
                   We supply to all leading industries, across India
                 </p>
               </div>
-              <div class="d-flex ">
-                <div>
-                  <h1 class="slider-number">ZINO</h1>
-                  <p class="slider-number-ph">Sweep (mm)</p>
+              <div class=" num-div-main banner-inside-cont">
+                <div class="num-div">
+                  <h2 class="slider-number">ZINO</h2>
+                  <h5>Sweep (mm)</h5>
                   <p class="slider-number-p">
                     Rated Speed (RPM) : 380 Minimum Air Delivery(CMM) : 210
                   </p>
                 </div>
-                <div>
-                  <h1 class="slider-number">TINO</h1>
-                  <p class="slider-number-ph">Rated Power (Watts)</p>
+                <div class="num-div">
+                  <h2 class="slider-number">TINO</h2>
+                  <h5>Rated Power (Watts)</h5>
                   <p class="slider-number-p">
                     Velit officia consequat duis enim guclm
                   </p>
                 </div>
               </div>
+              <button class="button-slider1">DOWNLOAD BROCHURE</button>
+
             </div>
           </div>
           <div class="col-lg-7">
@@ -181,10 +190,12 @@
     </div>
   </section> <!-- section-slider end -->
   <!-- vedio-div start -->
-  <div class="container-fluid position-relative justify-content-around">
+  <div class=" position-relative ">
     <div class="vedio-div ">
     </div>
-    <img src="./assets/image/Group 1261153898.png" class="image-vedio" />
+    <div class="container-fluid">
+      <img src="./assets/image/Group 1261153898.png" class="image-vedio" />
+    </div>
   </div> <!-- vedio-div end -->
 
   <div class=" vedio-para-img-div">
@@ -211,69 +222,72 @@
     </div>
   </div>
   <!-- abou-us div start -->
-  <div class="  product">
-    <div class="row">
-      <div class="col-lg-3 col-6">
-        <div class="d-flex">
-          <img src="./assets/image/trophy 1.png" class="icon" />
-          <div>
-            <h4>High Quality</h4>
-            <p>crafted from top materials</p>
+  <div class="  product " id="about-us">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <div class="d-flex">
+            <img src="./assets/image/trophy 1.png" class="icon" />
+            <div>
+              <h4>High Quality</h4>
+              <p>crafted from top materials</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-6">
-        <div class="d-flex">
-          <img src="./assets/image/guarantee.png" class="icon" />
-          <div>
-            <h4>Warranty Protection</h4>
-            <p>Over 2 years</p>
+        <div class="col-lg-3 col-6">
+          <div class="d-flex">
+            <img src="./assets/image/guarantee.png" class="icon" />
+            <div>
+              <h4>Warranty Protection</h4>
+              <p>Over 2 years</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-6 ">
-        <div class="d-flex">
-          <img src="./assets/image/shipping.png" class="icon" />
-          <div>
-            <h4>Free Shipping</h4>
-            <p>Order over 150 $</p>
+        <div class="col-lg-3 col-6 ">
+          <div class="d-flex">
+            <img src="./assets/image/shipping.png" class="icon" />
+            <div>
+              <h4>Free Shipping</h4>
+              <p>Order over 150 $</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-6 ">
-        <div class="d-flex">
-          <img src="./assets/image/customer-support.png" class="icon" />
-          <div>
-            <h4>24 / 7 Support</h4>
-            <p>Dedicated support</p>
+        <div class="col-lg-3 col-6 ">
+          <div class="d-flex">
+            <img src="./assets/image/customer-support.png" class="icon" />
+            <div>
+              <h4>24 / 7 Support</h4>
+              <p>Dedicated support</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
   </div><!-- abou-us div end -->
   <!-- our products starts -->
-  <section class="product-sec">
+  <section class="product-sec" id="product">
     <div class="container">
-      <h2>OUR PRODUCTS</h2>
+      <div class="dual-color"><h2>OUR PRODUCTS</h2></div>
       <div class="inner-content">
-        <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-              type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">Ceiling Fans</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">TPW</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">VENTILATION FANS</button>
           </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             <div class="fan-slider position-relative container-fluid">
-              <div class="owl-carousel ">
+              <div class="owl-carousel product-slider">
                 <div class="item">
                   <img src="./assets/image/Frame 1261153483.png" alt="Image 1" class="w-100" />
                 </div>
@@ -286,28 +300,30 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="tab-pane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div id="image1">
               <img src="./assets/image/Frame 1261153483 (5).png" class="w-100" />
             </div>
           </div>
-          <div class="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="tab-pane" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
             <div id="image2">
               <img src="./assets/image/Frame 1261153485.png" class="w-100" />
             </div>
           </div>
         </div>
+      </div>
 
-      </div> <!--inner div end -->
+
+
 
 
     </div><!--container div end -->
 
 
   </section> <!-- our oroduct end -->
-   <!--image-gallary start-->
-  <section class="section-pad bg-bottom position-relative mountain-section">
-     <div>
+  <!--image-gallary start-->
+  <section class="section-pad bg-bottom position-relative mountain-section" id="gallery">
+    <div>
       <div class="main-heading">
         <span>Share your setup with</span>
         <h2 class="heading">#Setron Home Appliances</h2>
@@ -363,9 +379,9 @@
     </div>
   </section> <!--image-gallary end-->
   <!--form-div start-->
-  <div class=" vedio-para-img-div">
+  <div class=" vedio-para-img-div" id="form">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row form-div">
 
         <div class="col-lg-5">
           <img src="./assets/image/Frame 1.png" class="w-100" />
@@ -389,17 +405,18 @@
 
             <div class="form-control">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" required>
+              <input type="tel" id="phone" name="phone" required placeholder="+91 6969696969">
             </div>
 
 
             <div class="form-control textarea">
               <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea name="" id="" cols="30" rows="1" placeholder="write message"></textarea>
             </div>
+            <div class="d-flex justify-content-end w-100">
 
-            <button type="submit">Send Massege</button>
-
+              <button type="submit">Send Massege</button>
+            </div>
           </form>
 
         </div>
@@ -407,39 +424,184 @@
     </div>
   </div> <!--form-div end-->
 
+  <!-- testmonial-section start -->
+  <div class="text-center test">
+    <span>TESTMONIAL</span>
+    <h2>What Our Clients Say</h2>
+  </div>
+  <section class="testmono" id="testmonial">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <div class="row w-75 main-row-div">
+          <div class="col-lg-6 col-12 img-div">
+            <img src="./assets/image/Rectangle 115.png" alt="Image 1" class="w-100 Image-1" />
+          </div>
+          <div class="col-lg-6 col-12 para-div">
+            <div>
+              <h4>The homemade live-work space that’s a serene haven</h4>
+              <img src="./assets/image/Vector (1).png" class="Vector1">
+              <p> The best interiors are a genuine reflection of their inhabitants. Here are three homes with real heart
+                Almost everything in the home of the designer Małgorzata Bany has been salvaged or made by herself and
+                her partner – except.</p><img src="./assets/image/Vector.png" class="Vector">
+
+            </div>
+            <div class="d-flex line-img-div">
+              <div class="drop-line"></div>
+              <div><p>Thomath Lewes</p>
+                <p>company name</p>
+              </div>
+           
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="mySlides fade"> -->
+        <!-- <div class="numbertext"></div> -->
+        <div class="row w-75 main-row-div">
+          <div class="col-lg-6 col-12 img-div">
+            <img src="./assets/image/Rectangle 115 (1).png" alt="Image 1" class="w-100 Image-1" />
+          </div>
+          <div class="col-lg-6 col-12 para-div">
+            <div>
+              <h4>The homemade live-work space that’s a serene haven</h4>
+              <img src="./assets/image/Vector (1).png" class="Vector1">
+              <p> The best interiors are a genuine reflection of their inhabitants. Here are three homes with real heart
+                Almost everything in the home of the designer Małgorzata Bany has been salvaged or made by herself and
+                her partner – except.</p><img src="./assets/image/Vector.png" class="Vector">
+
+            </div>
+
+          <style>
+.drop-line{
+  border-left: 3px dashed #00C4FF;
+
+  position: relative;
+
+}
+.drop-line::before{
+  content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #00C4FF;
+    border-radius: 40px;
+    top: 40px;
+    right: 0;
+    left: -7.5px;
+}
+.name-dg p + p{
+  font-weight: 100;
+ 
+}
+
+          </style>
+            <div class="d-flex line-img-div">
+              <div class="drop-line"></div>
+              <div class="name-dg"><p>Thomath Lewes</p>
+                <p>company name</p>
+              </div>
+           
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pre-next">
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
+      </div>
+    </div>
+    <br>
+
+    <div class=" button-pre-next">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+
+    </div>
+
+
+  </section>
+ 
+  <!-- footer-section-start -->
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="./assets/image/Group 3.png" />
+      <div class="footer-section links">
+
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Hero Section</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product">Our Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#form">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>2023 Satron. All rights reverved</span>
+    </div>
+  </footer>
 
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Include Owl Carousel JavaScript -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
   <script>
     $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
+      $('.product-sec .nav-tabs a').click(function () {
+        $(this).tab('show');
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".banner-slider").owlCarousel({
         loop: false,
-        margin: 10,
+        margin: 30,
         nav: true,
-
+        autoplay:true,
+        smartSpeed:1000,
         responsive: {
           0: {
             items: 1,
-          },
-          600: {
+          }
+        }
+      });
+      $(".product-slider").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        autoplay:true,
+        smartSpeed:1000,
+        responsive: {
+          0: {
             items: 1,
-          },
-          1000: {
-            items: 1,
-          },
-        },
+          }
+        }
       });
       function showActiveTabContent() {
         $(".tab-pane").hide();
@@ -458,8 +620,43 @@
 
         showActiveTabContent();
       });
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+
+      function autoPlay() {
+        plusSlides(1);
+      }
+
+
+      let autoplayInterval = setInterval(autoPlay, 3000);
     });
   </script>
+
 </body>
 
 </html>
