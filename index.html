@@ -17,9 +17,9 @@
 </head>
 <style>
   /* Change the active dot color */
-  .owl-theme .owl-dots .owl-dot.active {
+  /* .owl-theme .owl-dots .owl-dot.active {
     border: 5px solid #001973 !important;
-  }
+  } */
 
   .navbar-nav {
     text-align: center;
@@ -78,7 +78,8 @@
     </div>
   </nav> <!-- navbar-end -->
   <!-- section-slider start -->
-  <section class="slider container-fluid">
+  <section class="slider ">
+    <div class="container-fluid">
     <div class="owl-carousel banner-slider">
       <div class="main-div1">
         <div class="row">
@@ -162,7 +163,7 @@
                   We supply to all leading industries, across India
                 </p>
               </div>
-              <div class=" num-div-main banner-inside-cont">
+              <div class=" d-flex num-div-main justify-content-between">
                 <div class="num-div">
                   <h2 class="slider-number">ZINO</h2>
                   <h5>Sweep (mm)</h5>
@@ -188,6 +189,7 @@
         </div>
       </div>
     </div>
+  </div>
   </section> <!-- section-slider end -->
   <!-- vedio-div start -->
   <div class=" position-relative ">
@@ -207,7 +209,7 @@
         </div>
 
         <div class="col-lg-7 para">
-          <h1>About Us</h1>
+          <h2 class="dual-color">About Us</h2>
           <p>
             Setron is a brand of our company Setron Home Appliances, which is in
             business of manufacturing quality home appliances such as ceiling
@@ -222,13 +224,13 @@
     </div>
   </div>
   <!-- abou-us div start -->
-  <div class="  product " id="about-us">
+  <div class="product" id="about-us">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-3 col-6">
-          <div class="d-flex">
+          <div class="d-flex icon-div ">
             <img src="./assets/image/trophy 1.png" class="icon" />
-            <div>
+            <div >
               <h4>High Quality</h4>
               <p>crafted from top materials</p>
             </div>
@@ -243,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-6 ">
+        <div class="col-lg-3 col-6 icon-div">
           <div class="d-flex">
             <img src="./assets/image/shipping.png" class="icon" />
             <div>
@@ -288,14 +290,29 @@
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             <div class="fan-slider position-relative container-fluid">
               <div class="owl-carousel product-slider">
-                <div class="item">
-                  <img src="./assets/image/Frame 1261153483.png" alt="Image 1" class="w-100" />
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <img src="./assets/image/Asset 1@4x 10.png">
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <img src="./assets/image/Frame 1261153479.png">
+                  </div>
                 </div>
-                <div class="item">
-                  <img src="./assets/image/Frame 1261153483 (2).png" alt="Image 2" class="w-100" />
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <img src="./assets/image/Group 1261153829.png">
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <img src="./assets/image/Frame 1261153479 (2).png">
+                  </div>
                 </div>
-                <div class="item">
-                  <img src="./assets/image/Frame 1261153483 (3).png" alt="Image 3" class="w-100" />
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <img src="./assets/image/Asset 1@4x 12.png">
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <img src="./assets/image/Frame 1261153479 (1).png">
+                  </div>
                 </div>
               </div>
             </div>
@@ -322,6 +339,49 @@
 
   </section> <!-- our oroduct end -->
   <!--image-gallary start-->
+  <div class="nested-slider">
+    <div class="row container-fluid">
+   <div class="col-lg-5 col-12   smart-fan-text ">
+    <div >
+    <h4>50+ Smart Fans
+      For Your Home</h4>
+    <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+    <button>Enquire Now</button>
+   </div>
+  </div>
+   <div class="col-lg-7 col-12 parent-slider-div">
+  <div class="owl-carousel owl-theme parent-slider">
+    <div class="item"><img src="./assets/image/Group 1261153893.png"/>
+      <div  class="fan-card1">
+        <p>01 - TPW FAN</p>
+        <h5>ELEGANT</h5>
+        </div>
+    </div>
+    <div class="item"><img src="./assets/image/Frame 115.png"/>
+      <div  class="fan-card1">
+        <p>02 - TPW FAN</p>
+        <h5>ELEGANT</h5>
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme child-slider">
+      <div class="item"><img src="./assets/image/Group 1261153891.png"/>
+        <div  class="fan-card1">
+          <p>02 - Celling Fan</p>
+          <h5>ZENO</h5>
+          </div>
+        </div>
+    <div class="item"><img src="./assets/image/Group 1261153890.png"/>
+      <div class="fan-card1">
+          <p>01 - Celling Fan</p>
+          <h5>ECO</h5>
+          </div>
+      </div>
+      
+  </div>
+</div>
+</div>
+</div>
+</div>
   <section class="section-pad bg-bottom position-relative mountain-section" id="gallery">
     <div>
       <div class="main-heading">
@@ -429,24 +489,25 @@
     <span>TESTMONIAL</span>
     <h2>What Our Clients Say</h2>
   </div>
-  <section class="testmono" id="testmonial">
-    <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <div class="row w-75 main-row-div">
+  <section class="testmono container-fluid" id="testmonial">
+    <div class="owl-carousel banner-slider">
+     
+      <div class="main-div1">
+        <div class="row">
           <div class="col-lg-6 col-12 img-div">
-            <img src="./assets/image/Rectangle 115.png" alt="Image 1" class="w-100 Image-1" />
+            <img src="./assets/image/Rectangle 115.png" alt="Image 1" class="" id="Image-1" />
           </div>
           <div class="col-lg-6 col-12 para-div">
-            <div>
+            <div class="test-test-div">
               <h4>The homemade live-work space that’s a serene haven</h4>
-              <img src="./assets/image/Vector (1).png" class="Vector1">
-              <p> The best interiors are a genuine reflection of their inhabitants. Here are three homes with real heart
+              <div class="testmono-para-div">
+             <div class="commas">
+              <p class="commas-para"> The best interiors are a genuine reflection of their inhabitants. Here are three homes with real heart
                 Almost everything in the home of the designer Małgorzata Bany has been salvaged or made by herself and
-                her partner – except.</p><img src="./assets/image/Vector.png" class="Vector">
-
-            </div>
+                her partner – except.</p>
+              </div>
+              </div>
+           
             <div class="d-flex line-img-div">
               <div class="drop-line"></div>
               <div><p>Thomath Lewes</p>
@@ -454,84 +515,49 @@
               </div>
            
             </div>
-
+          </div>
           </div>
         </div>
       </div>
-
-      <!-- <div class="mySlides fade"> -->
-        <!-- <div class="numbertext"></div> -->
-        <div class="row w-75 main-row-div">
-          <div class="col-lg-6 col-12 img-div">
-            <img src="./assets/image/Rectangle 115 (1).png" alt="Image 1" class="w-100 Image-1" />
-          </div>
-          <div class="col-lg-6 col-12 para-div">
-            <div>
-              <h4>The homemade live-work space that’s a serene haven</h4>
-              <img src="./assets/image/Vector (1).png" class="Vector1">
-              <p> The best interiors are a genuine reflection of their inhabitants. Here are three homes with real heart
-                Almost everything in the home of the designer Małgorzata Bany has been salvaged or made by herself and
-                her partner – except.</p><img src="./assets/image/Vector.png" class="Vector">
-
+      <div class="main-div1">
+        <div class="row">
+        <div class="col-lg-6 col-12 img-div">
+          <img src="./assets/image/Rectangle 115 (1).png" alt="Image 1" class="" id="Image-1" />
+        </div>
+        <div class="col-lg-6 col-12 para-div">
+          <div class="test-test-div">
+            <h4>The homemade live-work space that’s a serene haven</h4>
+            <div class="testmono-para-div">
+           <div class="commas">
+            <p class="commas-para"> The best interiors are a genuine reflection of their inhabitants. Here are three homes with real heart
+              Almost everything in the home of the designer Małgorzata Bany has been salvaged or made by herself and
+              her partner – except.</p>
             </div>
-
-          <style>
-.drop-line{
-  border-left: 3px dashed #00C4FF;
-
-  position: relative;
-
-}
-.drop-line::before{
-  content: "";
-    position: absolute;
-    height: 12px;
-    width: 12px;
-    background-color: #00C4FF;
-    border-radius: 40px;
-    top: 40px;
-    right: 0;
-    left: -7.5px;
-}
-.name-dg p + p{
-  font-weight: 100;
- 
-}
-
-          </style>
-            <div class="d-flex line-img-div">
-              <div class="drop-line"></div>
-              <div class="name-dg"><p>Thomath Lewes</p>
-                <p>company name</p>
-              </div>
-           
             </div>
-
+         
+          <div class="d-flex line-img-div">
+            <div class="drop-line"></div>
+            <div><p>Thomath Lewes</p>
+              <p>company name</p>
+            </div>
+         
           </div>
         </div>
+        </div>
       </div>
-
-
-      <div class="pre-next">
-        <a class="prev" onclick="plusSlides(-1)"></a>
-        <a class="next" onclick="plusSlides(1)"></a>
       </div>
     </div>
-    <br>
-
-    <div class=" button-pre-next">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-
-    </div>
-
+   
+       
+     
+       
 
   </section>
  
   <!-- footer-section-start -->
-  <footer class="footer">
+  <footer class="footer container-fluid">
     <div class="footer-content">
-      <img src="./assets/image/Group 3.png" />
+      <img src="./assets/image/Group 3.png" class="footerlogo"/>
       <div class="footer-section links">
 
         <ul>
@@ -576,9 +602,8 @@
         $(this).tab('show');
       });
     });
-  </script>
-  <script>
-    $(document).ready(function () {
+  
+   
       $(".banner-slider").owlCarousel({
         loop: false,
         margin: 30,
@@ -596,7 +621,20 @@
         margin: 30,
         nav: true,
         autoplay:true,
+        lazyload:true,
         smartSpeed:1000,
+        responsive: {
+          0: {
+            items: 1,
+          }
+        }
+      });
+      $(".testmono").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        autoplay:true,
+       
         responsive: {
           0: {
             items: 1,
@@ -620,41 +658,43 @@
 
         showActiveTabContent();
       });
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+      $( '.parent-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
         }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+    },
+  
+});
+$('.child-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
         }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
+    }
+});
 
-
-      function autoPlay() {
-        plusSlides(1);
-      }
-
-
-      let autoplayInterval = setInterval(autoPlay, 3000);
-    });
   </script>
 
 </body>

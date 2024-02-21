@@ -18,6 +18,8 @@
        }
        .slider-text-div{
         text-align: center;
+        display: flex;
+        justify-content: center;
        }
       .grid-container1{
        display: block;
@@ -35,10 +37,15 @@
       .grid-container1 img{
         align-items: center;
       }
-     .slider-text-div{
-      align-items: center;
-      display: flex;
-     } 
+      .slider-text-div{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+       }
+       .testmono{
+        padding: 20px 10px;
+       }
+       
      .testmono .Image-1{
       margin-left: 2px;
       width: 98%;
@@ -49,19 +56,12 @@
     .footer-section.links ul{
       display: none;
     }
-    .main-row-div{
-    
-      margin-left: 20px;
-    }
+   
     .img-6{
    
       height: 100%;
     }
-    .num-div-main{
-      justify-content: center;
-      display: block;
-      padding-left: 20px;
-    }
+   
     .img-div{
       display: flex;
       justify-content: center;
@@ -72,12 +72,72 @@
     form .form-control{
       width: 100%;
     }
+    .testmono{
+      padding: 20px 10px;
+    }
+    .testmono .Image-1{
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+     }
+     .vedio-para-img-div .para h2{
+      font-size: 36px;
+      font-weight: 700;
+      color: #3A3A3A;
+     
+      text-align: center;
+      padding: 10px 0;
+     
+  }
+   .testmono h4{
+    text-align: center;
+    padding: 10px 0;
+   }
+   .testmono p{
+    text-align: center;
+   }
+   .line-img-div{
+    text-align: center;
+    margin-left: 30px;
+    padding: 10px 0 50px;
+   }
+   .main-row-div img{
+    width: 100%;
 
+   }
+   .testmono .para-div{
+    padding: 0;
+   }
+  
+
+   .testmono .owl-carousel .owl-dot{
+    background-color: white;
+  
+     height: 15px;
+     width: 15px;border-radius: 20px;
+    
+      
+   }
+   .testmono .owl-carousel .owl-dot.active{
+      background-color: #78787C;
+       height: 20px;
+       width: 20px;border-radius: 20px;
+       border-color: #78787C ;
+       }
+       .icon-div{
+        padding: 15px 25px;
+        }
+        
+       
  }
  
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) { 
+  .smart-fan-text{
+    padding:20px 0 25px 35px;
+    text-align: center;
+  }
     .grid-container {
          /* display: grid;   */
           grid-template-columns: auto auto auto auto  ; 
@@ -107,7 +167,7 @@
          text-align: center;
       }
       .container-fluid{
-       padding: 0;
+       padding: 10px 15px;
         
        }
        .nav-pills .nav-link{
@@ -119,10 +179,7 @@
       .footer-section.links ul{
         display: none;
       }
-     .main-row-div{
-        
-        margin-left: 20px;
-      }
+    
       .banner-inside-cont{
         margin: 20px 0;
       }
@@ -130,11 +187,7 @@
    
         height: 100%;
       }
-      .num-div-main{
-        justify-content: center;
-        display: block;
-        padding-left: 20px;
-      }
+     
       .img-div{
         display: flex;
         justify-content: center;
@@ -145,7 +198,71 @@
         form .form-control{
           width: 100%;
         }
-  
+        .testmono{
+          padding-bottom: 20px;
+          padding: 20px 10px;
+        }
+        .testmono .Image-1{
+          height: 100%;
+          object-fit: cover;
+         
+        
+       }
+       .slider-text-div{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+       }
+       .testmono h4{
+        text-align: center;
+        padding: 10px 0;
+       }
+       .testmono p{
+        text-align: center;
+       }
+       .line-img-div{
+        text-align: center;
+        margin-left: 30px;
+        padding: 10px 0 50px;
+       }
+       .vedio-para-img-div .para h2{
+        font-size: 36px;
+        font-weight: 700;
+        color: #3A3A3A;
+       
+        text-align: center;
+        padding: 10px 0;
+       
+    }
+    .main-row-div img{
+      width: 100%;
+     }
+     .testmono .para-div{
+      padding: 0;
+     }
+     .icon-div{
+     padding: 15px 0;
+     }
+     .testmono .owl-carousel .owl-dot{
+      background-color: white;
+    
+       height: 15px;
+       width: 15px;border-radius: 20px;
+      
+        
+     }
+     .testmono .owl-carousel .owl-dot.active{
+        background-color: #78787C;
+         height: 20px;
+         width: 20px;border-radius: 20px;
+         border-color: #78787C ;
+          }
+          .slider .owl-carousel.owl-drag .owl-item{
+            height: fit-content;
+          }  
+          .slider .owl-carousel .owl-dots{
+            bottom: 6px;
+          }
   }
  
  
@@ -175,19 +292,12 @@
         .footer-section.links ul{
           display: none;
         }
-        .main-row-div{
-         
-          margin-left: 20px;
-        }
+
         .img-6{
    
           height: 100%;
         }
-        .num-div-main{
-          justify-content: center;
-          display: block;
-          padding: 20px;
-        }
+       
         .img-div{
           display: flex;
           justify-content: center;
@@ -198,23 +308,89 @@
           form .form-control{
             width: 100%;
           }
+          .testmono{
+            padding: 20px 10px;
+          }
+          .testmono .Image-1{
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+           
           
- }
+         }
+         .slider-text-div{
+          text-align: center;
+          display: flex;
+          justify-content: center;
+         }
+         .testmono h4{
+          text-align: center;
+          padding: 10px 0;
+         }
+         .testmono p{
+          text-align: center;
+         }
+         .line-img-div{
+          text-align: center;
+          margin-left: 30px;
+          padding: 10px 0 50px;
+         }
+         .vedio-para-img-div .para h2{
+          font-size: 36px;
+          font-weight: 700;
+          color: #3A3A3A;
+         
+          text-align: center;
+          padding: 10px 0;
+         
+      }
+      .main-row-div img{
+        width: 100%;
+       }
+       .testmono .para-div{
+        padding: 0;
+       }
+       .icon-div{
+        margin-top: 20px;
+       }
+       .testmono .owl-carousel .owl-dot{
+        background-color: white;
+      
+         height: 15px;
+         width: 15px;border-radius: 20px;
+        position: absolute;
+        right: 75px;
+        bottom: -33px;
+          
+       }
+       .testmono .owl-carousel .owl-dot.active{
+          background-color: #78787C;
+           height: 20px;
+           width: 20px;border-radius: 20px;
+           border-color: #78787C ;
+           right: 50px;
+           bottom: -35px;
+         }
+         .icon-div{
+          padding: 15px 15px;
+          }
+          .slider .owl-carousel.owl-drag .owl-item{
+            height: fit-content;
+          }  
+          .slider .owl-carousel .owl-dots{
+            bottom: 6px;
+          }
+  }
+          
+ 
  @media only screen and (max-width: 360px) {
   .slideshow-container  .prev, .next,.text {font-size: 11px}
   
-  .main-row-div{
-  
-    margin-left: 20px;
-  }.img-6{
+.img-6{
    
     height: 100%;
   }
-  .num-div-main{
-    justify-content: center;
-    display: block;
-    padding-left: 20px;
-  }
+ 
   .img-div{
   display: flex;
   justify-content: center;
@@ -225,5 +401,73 @@
   form .form-control{
     width: 100%;
   }
-
+  .testmono{
+    padding: 20px 10px;
+  }
+  .testmono .Image-1{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+   
+  
+ }
+ .slider-text-div{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ }
+ .testmono h4{
+  text-align: center;
+  padding: 10px 0;
+ }
+ .testmono p{
+  text-align: center;
+ }
+ .line-img-div{
+  text-align: center;
+  margin-left: 30px;
+  padding: 10px 0 50px;
+ }
+ .vedio-para-img-div .para h2{
+  font-size: 36px;
+  font-weight: 700;
+  color: #3A3A3A;
+  
+  text-align: center;
+  padding: 10px 0;
+ 
 }
+.main-row-div img{
+  width: 100%;
+ }
+ .testmono .para-div{
+  padding: 0;
+ }
+ .icon-div{
+  margin-top: 20px;
+ }
+ .testmono .owl-carousel .owl-dot{
+  background-color: white;
+
+   height: 15px;
+   width: 15px;border-radius: 20px;
+  
+    
+ }
+ .testmono .owl-carousel .owl-dot.active{
+    background-color: #78787C;
+     height: 20px;
+     width: 20px;border-radius: 20px;
+     border-color: #78787C ;
+     }
+     .icon-div{
+      padding: 15px 15px;
+      }
+      .slider .owl-carousel.owl-drag .owl-item{
+        height: fit-content;
+      }  
+      .slider .owl-carousel .owl-dots{
+      bottom: 6px;
+      }
+}
+     
