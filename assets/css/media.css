@@ -125,7 +125,12 @@
        border-color: #78787C ;
        }
        .icon-div{
-        padding: 15px 25px;
+        padding: 20px 0px;
+        }
+        .fan-slider .owl-carousel .owl-nav button.owl-prev{
+          bottom: 30px;
+          top:0;
+          right: 0;
         }
         
        
@@ -134,6 +139,9 @@
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) { 
+  .heading-p p{
+    text-align: left;
+  }
   .smart-fan-text{
     padding:20px 0 25px 35px;
     text-align: center;
@@ -241,7 +249,7 @@
       padding: 0;
      }
      .icon-div{
-     padding: 15px 0;
+     padding: 20px 0px;
      }
      .testmono .owl-carousel .owl-dot{
       background-color: white;
@@ -262,6 +270,17 @@
           }  
           .slider .owl-carousel .owl-dots{
             bottom: 6px;
+          }
+          .child-slider .owl-prev{
+            right: 45px;
+          }
+          .child-slider .owl-next{
+            right: 45px;
+          }
+          .fan-slider .owl-carousel .owl-nav button.owl-prev{
+            bottom: 30px;
+            top:0;
+            right: 0;
           }
   }
  
@@ -351,7 +370,7 @@
         padding: 0;
        }
        .icon-div{
-        margin-top: 20px;
+        padding: 20px 0px;
        }
        .testmono .owl-carousel .owl-dot{
         background-color: white;
@@ -372,13 +391,18 @@
            bottom: -35px;
          }
          .icon-div{
-          padding: 15px 15px;
+          padding: 20px 0px;
           }
           .slider .owl-carousel.owl-drag .owl-item{
             height: fit-content;
           }  
           .slider .owl-carousel .owl-dots{
             bottom: 6px;
+          }
+          .fan-slider .owl-carousel .owl-nav button.owl-prev{
+            bottom: 30px;
+            top:0;
+            right: 0;
           }
   }
           

@@ -171,7 +171,7 @@ button{
     background-color:#F1FCFF ;
   margin-top: 45px;
    margin-bottom: 45px;
-   padding: 40px 0;
+   padding: 80px 0;
 }
 .product-ul{
     list-style-type: none;
@@ -302,11 +302,75 @@ input, textarea{
     padding-top: 20px;
 }
 form{
+
     display: flex;
     flex-wrap: wrap;
    padding-top: 30px;
    
 }
+
+        .contact-div{
+            background-image: url("/assets/image/Group\ 1000001746.png");
+            color: white;
+            padding: 40px  20px 20px 20px ;
+            height: 100%;
+            border: 1px solid;
+            background-size: cover;
+            border-radius: 10px;
+         }
+         .contact-div ul{
+            list-style-type: none;
+         }
+         .contact-div ul li{
+            display: flex;
+            padding-top: 70px;
+            
+         }
+          .contact-social-list{
+            display: flex;
+          }
+          .contact-div .contact-icon{
+            height: 25px;
+            width: 25px;
+            
+          }
+          .contact-detail-div p{
+             font-size: 16px ;
+             font-weight: 300;
+             line-height: 20px;
+             padding-left: 5px;
+             color: white;
+          }
+          .contact-detail-div{
+            margin-top: 50px;
+          }
+          .contact-div .heading-p h2{
+            font-size:28px ;
+            font-weight:800;
+            line-height:35px ;
+            padding-left: 12px;
+          }
+          .heading-p{
+            margin-left: 18px;
+            
+          }
+          .heading-p p{
+           font-size: 18px;
+           font-weight: 300;
+           line-height: 23px;
+            color: #C9C9C9;
+            margin-top: 10px;
+          }
+          .address-p{
+            width: 300px;
+          }
+          .contact-social-list{
+            margin-top: 40px;
+          }
+          .contact-social-list li a:hover{
+            color: white;
+          } 
+
 .vedio-para-img-div .form-div{
     border: 1px solid #e8eef2;
     border-radius: 6px;
@@ -320,10 +384,10 @@ form{
     font-weight: 500;
     color: #F5F5F5;
     background-color: #013D91;
-    border-radius: 6px;
-    padding: 12px 45px;
+    border-radius: 3px;
+    padding: 12px 50px;
     border-color: #013D91;
-    margin-top: 10px;
+    margin-top: 100px;
     margin-right: 20px;
 }
 .para button{
@@ -348,6 +412,9 @@ form .form-control{
     display: flex;
     flex-direction: column;
     margin-top: 35px;
+}
+.contact-div-main{
+    background-image: url("/assets/image/Group\ 1000001746.png");
 }
     form .form-control.textarea{
         width: 98%;
@@ -494,7 +561,7 @@ form .form-control{
         margin-bottom: -30px;
     }
     .testmono .Image-1{
-        height: 450px;
+        /* height: 450px; */
         object-fit: cover;
         width: 70%;
      }
@@ -534,14 +601,14 @@ form .form-control{
   
     .testmono h4{
         color: #FDFEFF;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 400;
         padding-bottom: 10px;
     }
    .testmono .testmono-para-div .commas .commas-para{
         color: #b8bdbd;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 300;
      padding: 0px 18px;
     
       
@@ -553,6 +620,11 @@ form .form-control{
     .line-img-div p{
         color: #f0f2f3;
         font-size: 16px;
+        font-weight: 300;
+    }
+    .line-img-div p+p{
+        color: #b8bdbd;
+        font-size: 14px;
         font-weight: 300;
     }
    
@@ -591,7 +663,7 @@ form .form-control{
         z-index: 2;
         background-size: contain;
         background-repeat: no-repeat;
-        left: 15px;
+       
 
       } 
       .commas::after{
@@ -619,10 +691,12 @@ form .form-control{
 .footer-content img{
     height: 40px;
     margin-left: 40px;
+    object-fit: contain;
+   
     
   }
   .footer{
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
 
@@ -650,9 +724,9 @@ form .form-control{
 .footer-section.links ul a {
     color: black;
     text-decoration: none;
-    padding: 0 35px;
+    padding: 0 25px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 19px;
    
   }
@@ -716,7 +790,7 @@ form .form-control{
   padding: 29px  10px;
   width: 210px;
   position: absolute;
-  bottom:-150px;
+  bottom:-80px;
   left: 20px;
  
 }
@@ -725,6 +799,7 @@ form .form-control{
   font-weight: 500;
   font-size: 16px;
   color: #616161;
+  padding-bottom: 25PX;
  
 }
 .fan-card1 h5{
@@ -758,20 +833,24 @@ form .form-control{
   background-color: #00C4FF !important;
     width: 35px;
     position: absolute;
-    bottom: 35px;
-    right:60px;
-
+    bottom: 10px;
+    right:24px;
+   
+    color: #FFFFFF;
 } 
+
 .child-slider .owl-next{
   background-color: #00C4FF !important;
     width: 35px;
     position: absolute;
-    bottom: 60px;
-    right:60px;
+    bottom: 35px;
+    right:24px;
+   
+    color: #FFFFFF;
 }
 .parent-slider-div .owl-carousel button.owl-dot span{
      
-      zoom: 2;
+      zoom: 1;
       align-items: start;
       border: none !important;
 }
