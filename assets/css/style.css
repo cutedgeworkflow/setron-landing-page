@@ -17,21 +17,43 @@ h1,h2,h3,h4,h5,h6,p,div{
 h1{
     font-size: 50px;
 }
-button{
-    border: none;
-    outline: none;
+header{
+    background-color: #fff;
+    padding: 10px 0;
+    max-width: -100vw;
+    overflow: hidden;
+    position: relative;
 }
-.navbar {
-    background-color:  #E8EEF2 !important;
-    ;
+header .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.navbar-light .navbar-nav .nav-link{
-    font-size: 15px;
-    color:#252C32;
-    font-weight: 500;
+header .right{
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
-.navbar-light .navbar-nav .nav-link:hover{
-    color: #013D91;
+header .right ul{
+    display: flex;
+}
+header .right ul li{
+    list-style-type: none;
+    margin: 0 15px;
+}
+header .right ul li a{
+    color: black;
+    transition: .2s;
+    text-decoration: none;
+}
+header .right ul li a:hover{
+    color: blue;
+}
+header #hamburger{
+    display: none;
+}
+#cancel{
+    display: none;
 }
 .button-slider1{
     background-color: #013D91;
@@ -84,9 +106,11 @@ button{
 .slider{
     background-color: #e8eef2;
     border: 1px solid #e8eef2;
-   
-    padding-top: 30px;
+     padding-left: 70px;
+    padding-top: 50px;
     /* position: relative; */
+
+
 }
 .slider .owl-carousel.owl-drag .owl-item{
     height: 450px;
@@ -163,10 +187,11 @@ button{
     margin-top: 24px;
 }
 .icon{
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     margin-right: 10px;
 }
+
 .product{
     background-color:#F1FCFF ;
   margin-top: 45px;
@@ -176,11 +201,11 @@ button{
 .product-ul{
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color:#e8eef2;
 }
 .product-ul li{
-    padding: 10px;
+    padding:10px;
     
 }
 .product-ul li a{
@@ -189,16 +214,16 @@ button{
   
 }
 .product h4{
- font-size: 22px;   
+ font-size: 20px;   
  font-weight: 600;
  color: #242424;
 }
 .product p{
     color: 
     #898989;
-    font-weight: 400;
+    font-weight: 300;
     padding-top: 3px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .vedio-para-img-div{
   
@@ -454,6 +479,7 @@ form .form-control{
         max-width: 100%;
         padding: 0px;
     }
+    
     .product-sec .inner-content .nav{
         justify-content: center;
     }
