@@ -19,7 +19,7 @@ h1{
 }
 header{
     background-color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
     max-width: -100vw;
     overflow: hidden;
     position: relative;
@@ -477,19 +477,19 @@ form .form-control{
     /* produc-section start */
     .product-sec .container{
         max-width: 100%;
-        padding: 0px;
+      
     }
     
     .product-sec .inner-content .nav{
         justify-content: center;
     }
 .nav-pills .nav-link.active{
-    border-bottom: 5px solid #00A2D2;
+    border-bottom: 4px solid #00A2D2;
     background-color: #F7F7F7 !important;
     color: #474444;
     font-weight: 500;
     font-size: 14px;
-
+    border-radius: 1px;
 
     }
     .product-sec .inner-content ul{
@@ -542,7 +542,7 @@ form .form-control{
         bottom: 0;
         height: 3px;
         position: absolute;
-        background-color: blue;
+        background-color: #013D91;
         border-radius: 10px;
     }
     .main-heading span{

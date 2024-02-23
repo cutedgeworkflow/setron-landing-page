@@ -9,6 +9,7 @@
  }
  
  @media screen and (max-width:991px) {
+  
   header #hamburger{
       display: block;
   }
@@ -44,8 +45,37 @@
       }
 }
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 991px) { 
-
+@media  (max-width: 991px) { 
+  .slider .img-div{
+     margin-bottom: 20px;
+     padding: 20px 10px;
+  }
+   h1{
+    font-size: 26px;
+  }
+  p{
+font-size: 14px;
+  }
+ .num-div h2{
+    font-size: 18px;
+  }
+  .slider {
+   padding: 40px 25px;
+   
+   
+  }
+  .button-slider1{
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+ 
+  /* .num-div h5{
+    text-align: left;
+  }
+  .slider-number-p{
+    text-align: left;
+  } */
+  }
     .grid-container {
         /* display: grid; */
         grid-template-columns: auto auto auto auto auto auto ;
@@ -163,9 +193,16 @@
         padding: 20px 0px;
         }
         .fan-slider .owl-carousel .owl-nav button.owl-prev{
-          bottom: 30px;
+          bottom: -30px;
           top:0;
           right: 0;
+          left: 30px;
+        }
+        .fan-slider .owl-carousel .owl-nav button.owl-next{
+          bottom: -30px;
+          top:0;
+          right: 0;
+          left: 50px;
         }
         
        
@@ -174,6 +211,12 @@
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) { 
+  .slider h1{
+    font-size: 26px;
+  }
+  .slider h2{
+    font-size: 14px;
+  }
   .heading-p p{
     text-align: left;
   }
