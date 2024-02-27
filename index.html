@@ -31,10 +31,10 @@
         <i class="fa-solid fa-x" id="cancel"></i>
         <ul>
           <li><a href="#">Home Section</a></li>
-          <li><a href="about-us">About Us</a></li>
-          <li><a href="product">Our Products</a></li>
-          <li><a href="gallery">Gellery</a></li>
-          <li><a href="form">Contact Us</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#product">Our Products</a></li>
+          <li><a href="#gallery">Gellery</a></li>
+          <li><a href="#form">Contact Us</a></li>
           <li><a href="#">Testimonial</a></li>
         </ul>
       </div>
@@ -473,68 +473,30 @@
   </div>
   <section class="testmono container-fluid" id="testmonial">
     <div class="owl-carousel banner-slider">
-     
-      <div class="main-div1">
-        <div class="row">
+      <div class="row">
           <div class="col-lg-6 col-12 img-div">
             <img src="./assets/image/Rectangle 115.png" alt="Image 1" class="Image-1" id="Image-1" />
           </div>
-          <div class="col-lg-6 col-12 para-div">
-            <div class="test-test-div">
-              <h4>The homemade live-work space that’s a serene haven</h4>
-              <div class="testmono-para-div">
-             <div class="commas">
-              <p class="commas-para"> The best interiors are a genuine reflection of their inhabitants. Here are three homes with real heart
-                Almost everything in the home of the designer Małgorzata Bany has been salvaged or made by herself and
-                her partner – except.</p>
-              </div>
+          <div class="col-lg-6 col-12">
+          
+              <img src="./assets/image/Group 811.png"  class="testmoni-text-image"/>
               </div>
            
-            <div class="d-flex line-img-div">
-              <div class="drop-line"></div>
-              <div><p>Thomath Lewes</p>
-                <p>company name</p>
-              </div>
-           
-            </div>
+            
           </div>
-          </div>
-        </div>
-      </div>
-      <div class="main-div1">
-        <div class="row">
+       <div class="row">
         <div class="col-lg-6 col-12 img-div">
-          <img src="./assets/image/Rectangle 115 (1).png" alt="Image 1" class="" id="Image-1" />
+          <img src="./assets/image/Rectangle 115 (1).png" alt="Image 1" class="Image-1" id="Image-1" />
         </div>
-        <div class="col-lg-6 col-12 para-div">
-          <div class="test-test-div">
-            <h4>The homemade live-work space that’s a serene haven</h4>
-            <div class="testmono-para-div">
-           <div class="commas">
-            <p class="commas-para"> The best interiors are a genuine reflection of their inhabitants. Here are three homes with real heart
-              Almost everything in the home of the designer Małgorzata Bany has been salvaged or made by herself and
-              her partner – except.</p>
-            </div>
+        <div class="col-lg-6 col-12 ">
+         
+            <img src="./assets/image/Group 811 (1).png" class="testmoni-text-image"/>
             </div>
          
-          <div class="d-flex line-img-div">
-            <div class="drop-line"></div>
-            <div><p>Thomath Lewes</p>
-              <p>company name</p>
-            </div>
-         
-          </div>
-        </div>
+        
         </div>
       </div>
-      </div>
-    </div>
-   
-       
-     
-    
-    
-  </section>
+   </section>
  
   <!-- footer-section-start -->
   <footer class="footer container-fluid">
@@ -569,12 +531,7 @@
     </div>
   </footer>
 
-
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://kit.fontawesome.com/bdf65d4d86.js" crossorigin="anonymous"></script>
@@ -612,7 +569,7 @@
         loop: true,
         margin: 30,
         nav: true,
-        autoplay:true,
+        autoplay:false,
         lazyload:true,
         smartSpeed:1000,
         responsive: {
@@ -624,8 +581,10 @@
       $(".testmono").owlCarousel({
         loop: true,
         margin: 30,
-        nav: true,
-        autoplay:true,
+        nav: false,
+        autoplay:false,
+        dots:false,
+        items:1,
        
         responsive: {
           0: {
@@ -655,7 +614,7 @@
     margin:10,
     nav:false,
     dots:true,
-    autoplay:false,
+    autoplay:true,
     responsive:{
         0:{
             items:1
