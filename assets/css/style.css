@@ -802,10 +802,8 @@ form .form-control{
 }
 
 .fan-card1{
-  border: 1px solid white;
-  background-color: white;
-  
-  padding: 29px  10px;
+  background-color: rgba(255, 255, 255, 0.797);
+  padding: 23px 10px 30px;
   width: 200px;
   position: absolute;
   bottom:-80px;
@@ -1179,4 +1177,79 @@ button{
     }
     .nested-slider .row{
         margin: 0;
+    }
+    .whatsapp-phone{
+        position: fixed;
+        z-index: 9;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        
+    }
+    .whatsapp-phone .icn{
+        margin: 8px 0;
+        cursor: pointer;
+    }
+    .whatsapp-phone .icn img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .whatsapp-phone .icn.phn:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        border: 1px solid #013d91;
+        border-radius: 100px;
+        -webkit-animation: widgetPulse infinite 1.5s;
+        animation: widgetPulse infinite 1.5s;
+    }
+    .whatsapp-phone .icn.phn:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        border: 1px solid #013d91;
+        border-radius: 100px;
+        -webkit-animation: widgetPulse2 infinite 1.5s;
+        animation: widgetPulse2 infinite 1.5s;
+    }
+    .whatsapp-phone .icn {
+        width: 45px;
+        height: 45px;
+        border-radius: 100px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff !important;
+        font-size: 18px !important;
+        position: relative;
+    }
+    @keyframes  widgetPulse2{
+        0%{
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+            opacity: 1;
+        }
+        100%{
+            -webkit-transform: scale(1.4, 1.4);
+            transform: scale(1.4, 1.4);
+            opacity: 0;
+        }
+    }
+    @keyframes  widgetPulse{
+        0%{
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+            opacity: 1;
+        }
+        100%{
+            -webkit-transform: scale(1.8, 1.8);
+            transform: scale(1.8, 1.8);
+            opacity: 0;
+        }
     }
