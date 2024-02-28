@@ -107,18 +107,21 @@ header #hamburger{
 .slider{
     background-color: #e8eef2;
     border: 1px solid #e8eef2;
-     padding-left: 70px;
-    padding-top: 50px;
+     /* padding-left: 70px;
+    padding-top: 50px; */
     /* position: relative; */
 
 
+}
+.slider .img-6{
+    object-fit: contain;
 }
 .slider .owl-carousel.owl-drag .owl-item{
     height: 450px;
 }
 .slider .slider-text-div{
-   
-    display: flex;
+/*    
+    display: flex; */
     text-align: left;
 }
 .slider-heading-p{
@@ -188,8 +191,8 @@ header #hamburger{
     margin-top: 24px;
 }
 .icon{
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     margin-right: 10px;
 }
 
@@ -197,7 +200,7 @@ header #hamburger{
     background-color:#F1FCFF ;
   margin-top: 45px;
    margin-bottom: 45px;
-   padding: 80px 0;
+   padding: 40px 0;
 }
 .product-ul{
     list-style-type: none;
@@ -235,7 +238,7 @@ header #hamburger{
     font-size: 36px;
     font-weight: 700;
     color: #3A3A3A;
-    padding-bottom: 15px;
+    padding: 15px 0;
     
 }
 .vedio-para-img-div .para{
@@ -405,17 +408,7 @@ form{
     margin-bottom: 30px;
 }
 
-.vedio-para-img-div button{
-    font-size: 14px;
-    font-weight: 500;
-    color: #F5F5F5;
-    background-color: #013D91;
-    border-radius: 3px;
-    padding: 12px 50px;
-    border-color: #013D91;
-    margin-top: 100px;
-    margin-right: 20px;
-}
+
 .para button{
     font-size: 14px;
     font-weight: 500;
@@ -427,10 +420,7 @@ form{
     margin-top: 20px;
     margin-right: 20px;
 }
-.para button:hover{
-   
-    box-shadow:  -1px -1px 10px 5px   #00A2D2;
-} 
+
 
 form .form-control{
     width: 47%;
@@ -483,6 +473,7 @@ form .form-control{
     
     .product-sec .inner-content .nav{
         justify-content: center;
+        margin: 25px 0;
     }
 .nav-pills .nav-link.active{
     border-bottom: 4px solid #00A2D2;
@@ -911,3 +902,26 @@ form .form-control{
 .nested-slider .owl-item.active .owl-nav{
   display: block;
 }
+.flotting-button-div{
+    position: fixed;
+    right: 10px;
+    z-index: 99;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+button{
+    border: none;
+    outline: none;
+}
+    .flotting-button-div button{
+        width: 55px;
+        padding: 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    .flotting-button-div button img{
+        width: 100%;
+    }
