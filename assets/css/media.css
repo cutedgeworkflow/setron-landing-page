@@ -23,7 +23,41 @@
 
  
  @media screen and (max-width:991px) {
-  
+h1{
+  font-size: 35px;
+}
+h2{
+  font-size: 30px;
+}
+.smart-fan-text h4{
+  font-size: 30px;
+}
+.banner-slider-main .container-fluid{
+  padding: 0 15px;
+}
+.testimonial .left img{
+  width: 100%;
+}
+.fan-slider .sec-img{
+  padding: 30px 15px;
+}
+.testimonial{
+  padding: 25px 15px !important;
+}
+.testimonial .owl-dots{
+  position: static;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  transform: translate(0);
+  margin-top: 30px;
+}
+.testimonial .owl-dot {
+  margin: 0 4px;
+}
+.testimonial .right{
+  margin-top: 25px;
+}
   header #hamburger{
       display: block;
   }
@@ -64,107 +98,20 @@
      margin-bottom: 20px;
      padding: 20px 10px;
   }
-   h1{
-    font-size: 26px;
-  }
-  p{
-font-size: 14px;
-  }
- .num-div h2{
-    font-size: 18px;
-  }
-  /* .slider {
-   padding: 40px 25px;
-   
-   
-  } */
   .button-slider1{
     font-size: 10px;
     padding: 8px 20px;
   }
-  .para button {
-    font-size: 10px;
-    padding: 8px 20px;
+  .text-center.test{
+    text-align: left !important;
+    padding: 0px 15px;
   }
-
-  .smart-fan-text button {
-    font-size: 10px;
-    padding: 8px 20px;
-    margin: 10px 0;
-  }
-  /* .num-div h5{
+  .main-heading{
     text-align: left;
+    padding: 0 15px;
   }
-  .slider-number-p{
-    text-align: left;
-  } */
   }
-    .grid-container {
-        /* display: grid; */
-        grid-template-columns: auto auto auto auto auto auto ;
-        padding: 5px;
-       }
-       
-      .grid-container1{
-       display: block;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-        height: 550px;
-      }
-      .HomeContainer{
-        display: block;
-        justify-content: center;
-        align-items: center;
-
-      }
-      .grid-container1 img{
-        align-items: center;
-      }
-     
-     
     
-    /* .footer-section.links ul {
-      display: none;
-    } */
-   
-    .img-6{
-   
-      height: 100%;
-    }
-   
-    .img-div{
-      display: flex;
-     
-      }
-    /* form{
-      flex-direction: column;
-    } */
-    /* form .form-control{
-      width: 100%;
-    } */
-    .testmono{
-      padding: 0 10px;
-    }
-    
-
-   
-   .testmono h4{
-    text-align: center;
-    padding: 10px 0;
-   }
-   .testmono p{
-    text-align: center;
-   }
-   .line-img-div{
-    text-align: center;
-    margin-left: 30px;
-    padding: 10px 0 50px;
-   }
-   .main-row-div img{
-    width: 100%;
-
-   }
   
 
    .testmono .owl-carousel .owl-dot{
@@ -194,7 +141,7 @@ font-size: 14px;
        
  
  
- 
+      
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) { 
   .parent-slider-div .owl-theme .owl-dots {
@@ -226,8 +173,7 @@ font-size: 14px;
     text-align: left;
   }
   .smart-fan-text{
-    padding:20px 0 25px 35px;
-    /* text-align: center; */
+    padding: 0 12px 15px;
   }
     .grid-container {
          /* display: grid;   */
@@ -349,18 +295,20 @@ font-size: 14px;
           .fan-slider .owl-carousel .owl-nav button.owl-prev{
             bottom: -30px;
             top:0;
-            right: 0;
-            left: 30px;
+            left: 0;
           }
           .fan-slider .owl-carousel .owl-nav button.owl-next{
             bottom: -30px;
             top:0;
             right: 0;
-            left: 50px;
+            /* left: 50px; */
           }
           .testmono .testmoni-text-image{
             padding: 10px 0;
             
+           }
+           .parent-slider-div .owl-theme .owl-dots{
+            top: -8px;
            }
   }
  
@@ -479,6 +427,25 @@ font-size: 14px;
             bottom: 30px;
             top:0;
             right: 0;
+          }
+          #image1 , #image2{
+            flex-direction: column;
+          }
+          #image1 img, #image2 img{
+            width: 100%;
+          }
+          .dual-color{
+            justify-content: start;
+          }
+          .about-us .dual-color{
+            margin: 20px 0 10px;
+          } 
+          .product-sec .dual-color{
+            padding: 0 15px;
+          }
+          .f-img{
+            height: 350px;
+            object-fit: cover;
           }
   }
           
