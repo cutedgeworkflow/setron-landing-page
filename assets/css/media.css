@@ -308,7 +308,10 @@ h2{
             
            }
            .parent-slider-div .owl-theme .owl-dots{
-            top: -8px;
+            top: 460px;
+           }
+           .nested-slider .owl-item.active+.owl-item.active{
+              height: 450px !important;
            }
   }
  

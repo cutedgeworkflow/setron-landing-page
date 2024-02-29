@@ -771,7 +771,7 @@ form .form-control{
 /* nested-slider */
 .nested-slider{
     background-color: #F2FCFF;
-    padding-top: 40px;
+    padding: 40px 0;
     margin-top: 20px;
 }
 
@@ -868,10 +868,12 @@ form .form-control{
     color: #FFFFFF;
 }
 .parent-slider-div .owl-carousel button.owl-dot span{
-     
       zoom: 1;
       align-items: start;
       border: none !important;
+}
+.nested-slider .owl-carousel{
+    position: relative;
 }
 .parent-slider-div .owl-theme .owl-dots .owl-dot.active span::before{
     position: absolute;
@@ -892,9 +894,9 @@ form .form-control{
 }
 .parent-slider-div .owl-theme .owl-dots{
     transform: translateX(-50%);
-    position: relative;
-    left: 55%;   
-    top: -40px;
+    position: absolute;
+    left: 55%;
+    top: 405px;
 }
 .nested-slider .owl-item.active+
 .owl-item.active .fan-card1{
