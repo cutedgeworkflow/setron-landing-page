@@ -14,6 +14,7 @@
   <link href="./assets/css/style.css" rel="stylesheet" />
   <link href="./assets/css/font.css" rel="stylesheet" />
   <link href="./assets/css/media.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 
@@ -31,10 +32,10 @@
         <i class="fa-solid fa-x" id="cancel"></i>
         <ul>
           <li><a href="#">Home Section</a></li>
-          <li><a href="about-us">About Us</a></li>
-          <li><a href="product">Our Products</a></li>
-          <li><a href="gallery">Gellery</a></li>
-          <li><a href="form">Contact Us</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#product">Our Products</a></li>
+          <li><a href="#gallery">Gellery</a></li>
+          <li><a href="#form">Contact Us</a></li>
           <li><a href="#">Testimonial</a></li>
         </ul>
       </div>
@@ -399,37 +400,38 @@
         </div>
 
         <div class="col-lg-7">
-          <form>
+          <form id="contactForm" method="post">
             <div class="form-control">
               <label for="firstname">First Name</label>
-              <input type="text" id="firstname" name="firstname" required>
+              <input type="text"  name="name" required>
             </div>
             <div class="form-control">
-              <label for="email">Last Name</label>
-              <input type="email" id="lastname" name="lastname" required>
+              <label for="lastname">Last Name</label>
+              <input type="text"  name="lname" required>
             </div>
             <div class="form-control">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" name="email" required>
 
             </div>
 
             <div class="form-control">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" required placeholder="+91 6969696969">
+              <input type="tel"  name="phone" required placeholder="+91 6969696969">
             </div>
 
 
             <div class="form-control textarea">
               <label for="message">Message:</label>
-              <textarea name="" id="" cols="30" rows="1" placeholder="write message"></textarea>
+              <textarea name="message" id="" cols="30" rows="1" placeholder="write message"></textarea>
             </div>
             <div class="d-flex justify-content-end w-100">
 
-              <button type="submit" class="light">Send Massege</button>
+              <button type="submit" class="light" id="sendButton" >Send Massege</button>
             </div>
           </form>
-
+          
+        <div id="response"></div>
         </div>
       </div>
     </div>
@@ -521,6 +523,52 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://kit.fontawesome.com/bdf65d4d86.js" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+    $("#contactForm").submit(function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Disable the form elements while processing
+        $("#firstname, #lastname,#email,#phone, #message, #sendButton").prop("disabled", true);
+
+        // Display the loading animation on the button
+        $("#sendButton").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...');
+
+        // Serialize the form data
+        var formData = $(this).serialize();
+
+        $.ajax({
+            type: "POST",
+            url: "main.php", // Replace with the actual path to your PHP script
+            data: formData,
+            success: function (response) {
+                if (response === "success") {
+                    // Reset the form
+                    $("#contactForm")[0].reset();
+                    // Display a success message
+                    $("#response").html("Message sent successfully.");
+                } else {
+                    // Display an error message
+                    $("#response").html("Error: " + response);
+                }
+
+                // Re-enable the form elements and reset the button
+                $("#firstname, #lastname,#email,#phone, #message, #sendButton").prop("disabled", false);
+                $("#sendButton").html("Send");
+            },
+            error: function (xhr, status, error) {
+                // Display an error message
+                $("#response").html("Error: " + error);
+
+                // Re-enable the form elements and reset the button
+                $("#firstname, #lastname,#email,#phone, #message, #sendButton").prop("disabled", false);
+                $("#sendButton").html("Send");
+            }
+        });
+    });
+});
+
+  </script>
   <script>
     let hamburger = document.getElementById("hamburger")
     let right = document.getElementById("right-head")

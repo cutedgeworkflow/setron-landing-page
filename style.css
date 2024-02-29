@@ -1,0 +1,59 @@
+/* Add custom styles here */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.01); /* Add a subtle hover effect */
+}
+
+.form-control {
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Change the border color on focus */
+    box-shadow: none;
+}
+
+#response {
+    margin-top: 20px;
+    text-align: center;
+    color: #28a745; /* Success message color */
+    font-weight: bold;
+}
+
+#sendButton {
+    transition: background-color 0.3s ease-in-out;
+}
+
+#sendButton:hover {
+    background-color: #007bff; /* Change button color on hover */
+}
+
+/* Loading animation styles */
+.spinner-border {
+    position: relative;
+    top: 4px;
+    margin-left: 10px;
+}
+
+/* Center the loading spinner */
+#loadingSpinner {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Add more custom styles as needed */
